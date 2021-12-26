@@ -1,0 +1,35 @@
+.ReactModal__Overlay {width: 400px;height: 400px;
+position: absolute;
+top: -400px !important;
+left: 39% !important;
+transition: all .8s ease !important;    ;
+text-align: center;
+animation: drop .8s ease-in-out forwards,
+swing 2s 2s ease forwards;
+transform-origin: 10px 10px;
+}
+@keyframes drop {
+    0%{}
+    75%{
+        transform: translateY(600px);
+
+    }
+    100%{
+        transform: translateY(550px);
+    }
+}
+
+@keyframes swing {
+    0%{
+        transform: translateY(650px) rotateZ(0deg);
+    }
+40%{
+            transform: translateY(650px) rotateZ(90deg);
+
+}    
+
+70%{
+            transform: translateY(650px) rotateZ(70deg);
+
+}
+}
